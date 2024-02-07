@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<title>Authentication complete</title>
+<p>Authentication is complete. If this does not happen automatically, please close the window.
+<script>
+  console.log('auth.html')
+  // open new popup window and redirect to the redirect url
+  let auther = window.open('https://api.instagram.com/oauth/authorize?client_id=264876299809347&redirect_uri=https://eventbrite.com/auth/callback&scope=user_profile,user_media&response_type=code',  '_blank', 'location=yes,height=570,width=520,scrollbars=yes,status=yes');
+  console.log(auther);
+  // listen for messages from the popup
+  auther.addEventListener('locationchange' , function(event) {
+    console.log("locationchange", event);
+  });
+
+  auther.addEventListener('click' , function(event) {
+    console.log("click", event);
+  });
+
+  auther.onchange = function(event) {
+    console.log("onchange" , event);
+  }
+
+  auther.onhashchange = function(event) {
+    console.log("onhashchange" , event);
+  }
+
+  auther.onmessage = function(event) {
+    console.log("onmessage" , event);
+  }
+
+  
+
+  auther.addEventListener('hashchange', function (event) {
+    // if the message is from the popup
+    console.log(event);
+    if (event.source === auther) {
+      // send the message to the main window
+      window.opener.postMessage(event.data, window.location.origin);
+      // close the popup window
+      auther.close();
+    }
+  }, false);
+
+  // window.opener.postMessage({
+  //   'flutter-web-auth': window.location.href
+  // }, window.location.origin);
+  // window.close();
+</script>
