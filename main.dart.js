@@ -41806,7 +41806,7 @@ i.sl(0,!0)
 h=t.N
 n=A.aQ(["Content-Type","application/x-www-form-urlencoded","Accept","/","Accept-Encoding","gzip, deflate, br"],h,h)
 g=o.ay
-m=A.aQ(["client_id","264876299809347","client_secret","9a4cc61dd7b782aab5ddd3f4abb93adf","grant_type","authorization_code","redirect_uri","https://wanna-create-biz.web.app/callback.html","code",g.gl(g)],h,h)
+m=A.aQ(["client_id","264876299809347","client_secret","9a4cc61dd7b782aab5ddd3f4abb93adf","grant_type","authorization_code","redirect_uri","https://prashantpag26.github.io/wana_app/callback.html","code",g.gl(g)],h,h)
 h=o.db
 h.j0(0,"Request: "+A.pE(m))
 h.j0(0,"Request: "+A.pE(n))
@@ -42047,7 +42047,7 @@ var $async$zz=A.M(function(a,b){if(a===1)return A.I(b,r)
 while(true)switch(s){case 0:n=A.G5()
 m=window
 m.toString
-p=B.w6.w9(m,"https://www.eventbrite.com/oauth/authorize?response_type=token&client_id=7VMAVI7XB77TUY36HN&redirect_uri=https://wanna-create-biz.web.app/callback.html","Auth")
+p=B.w6.w9(m,"https://www.eventbrite.com/oauth/authorize?response_type=token&client_id=N6HGZJSAJR5NOVSJZG&redirect_uri=https://prashantpag26.github.io/wana_app/callback.html","Auth")
 o=A.b0("messageSubscription")
 m=window
 m.toString
@@ -42104,7 +42104,7 @@ var $async$zA=A.M(function(a,b){if(a===1)return A.I(b,r)
 while(true)switch(s){case 0:n=A.G5()
 m=window
 m.toString
-p=B.w6.w9(m,"https://api.instagram.com/oauth/authorize?client_id=264876299809347&redirect_uri=https://wanna-create-biz.web.app/callback.html&scope=user_profile,user_media&response_type=code","Auth")
+p=B.w6.w9(m,"https://api.instagram.com/oauth/authorize?client_id=264876299809347&redirect_uri=https://prashantpag26.github.io/wana_app/callback.html&scope=user_profile,user_media&response_type=code","Auth")
 o=A.b0("messageSubscription")
 m=window
 m.toString
